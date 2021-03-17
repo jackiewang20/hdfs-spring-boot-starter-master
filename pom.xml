@@ -68,7 +68,6 @@
                 <version>${hadoop.version}</version>
             </dependency>
 
-
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -77,34 +76,9 @@
                 <scope>import</scope>
             </dependency>
 
-
         </dependencies>
     </dependencyManagement>
 
-    <repositories>
-        <repository>
-            <id>aWiFi-rep</id>
-            <name>Private Repository</name>
-            <url>http://192.168.41.25:8081/nexus/content/groups/public</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>aWiFi-rep-plugin</id>
-            <url>http://192.168.41.25:8081/nexus/content/groups/public</url>
-        </pluginRepository>
-    </pluginRepositories>
-    <distributionManagement>
-        <repository>
-            <id>aWiFi-rep-releases</id>
-            <name>Nexus Release Repository</name>
-            <url>http://192.168.41.25:8081/nexus/content/repositories/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>aWiFi-rep-snapshots</id>
-            <name>Nexus Snapshot Repository</name>
-            <url>http://192.168.41.25:8081/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
+
 
 </project>
